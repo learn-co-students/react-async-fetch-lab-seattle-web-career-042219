@@ -8,7 +8,7 @@ class App extends Component {
     fetch("http://api.open-notify.org/astros.json")
       .then(res => res.json())
       .then(data => this.setState({ people: data }))
-      .catch(err => comnsole.log(err));
+      .catch(err => console.log(err));
   }
 
   render() {
